@@ -1,0 +1,58 @@
+@import 'config/mixins';
+@import 'config/vars';
+
+.main{
+    @include justifyBeetwen;
+    margin-top: 120px;
+    &__left{
+        max-width: 567px;
+    }
+    &__title{
+        font-family: 'Jost';
+        font-weight: 900;
+        font-size: 124px;
+        line-height: 140px;
+        letter-spacing: -1.7px;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 24px;
+        color: $gray;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+    }
+    &__btnDownload{
+        @include btnBlack;
+        padding: 20px 40px;
+        border-radius: 126px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__btnShop{
+        font-family: 'Jost';
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 1px solid  black;
+        text-transform: uppercase;
+        margin-left: 30px;
+    }
+    &__right{
+        margin-left: 10px;
+        margin-top: 2px;
+        img{
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+}
+.cafeMain{
+    position: absolute;
+    left: 524px;
+    top: 565px;
+}

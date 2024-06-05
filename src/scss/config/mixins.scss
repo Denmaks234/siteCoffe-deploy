@@ -1,0 +1,17 @@
+@mixin centerAll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin  justifyBeetwen {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin btnBlack{
+	color: white;
+    background: #000;
+    text-transform: uppercase;
+	font-family: "Jost";
+	
+}

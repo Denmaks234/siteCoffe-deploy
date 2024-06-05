@@ -1,0 +1,15 @@
+@use "sass:math";
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import "config/fonts";
+@import "config/vars";
+@import "config/mixins";
+@import "config/reset";
+@import "config/base";
+@import 'components/header.scss';
+@import 'components/menu.scss';
+@import 'components/mainPart.scss';
+@import 'components/alowishus.scss';
+@import 'components/order.scss'

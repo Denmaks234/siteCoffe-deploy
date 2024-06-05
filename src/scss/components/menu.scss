@@ -1,0 +1,15 @@
+@import "config/mixins";
+.menu{
+    margin-left: 244px;
+    @include centerAll;
+}
+.menu_item{
+    margin-right: 40px;
+}
+.menu_link{
+    color: black;
+    text-decoration: none;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 15px;
+}

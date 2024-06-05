@@ -1,0 +1,28 @@
+<section class="alowishus">
+    <img class="bg_img" src="../images//24 1.png" alt="">
+    <div class="alowishus__header">
+      <h1 class="alowishus__title">Explore Our Alowishus</h1>
+      <p class="alowishus__subtitle">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
+    </div>
+    <div class="alowishus__items">
+    @@loop('alowishusItem.html',
+    [{
+        'title': 'Our Catering',
+        'subtitle': 'Alowishus Catering, delicious drop off Catering',
+        'imagePath':'../images/food.png',
+        'btnTitle':'Order cathering'
+      },
+      {
+        'title': 'The Food',
+        'subtitle': 'Our entire menu is available as dine in or takeaway.',
+        'imagePath':'../images/fast-food.png',
+        'btnTitle':'food menu'
+      },
+      {
+        'title': 'The Gelato',
+        'subtitle': 'Life is like GELATO, enjoy it before it melts.',
+        'imagePath':'../images/ice-cream.png',
+        'btnTitle':'Discover more'
+      }] )
+    </div>
+</section>
