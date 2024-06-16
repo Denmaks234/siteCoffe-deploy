@@ -1,36 +1,44 @@
 <!doctype html>
 <html lang="ru">
   <head>
-  <style>html { opacity: 0; }</style>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Главная</title>
-
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>@@title</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.min.css">
-
-  <script defer="defer" src="js/main.min.js"></script>
-</head>
-
-  <body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  
+    <script defer="defer" src="js/main.min.js"></script>
+  </head>
+  
+  <body class="body">
     <div class="wrapper">
       <div class="container">
         <header class="header" data-lp>
-	<a class="logo" href="#"><img src="./images/logo.png" alt="LOGO"></a>
+	<img src="./images//burger.png" class="burger" alt="">
+	<div class="header__row">
+		<a class="logo" href="#"><img src="./images/logo.png" alt="LOGO"></a>
 	<ul class="menu">
-    <li class="menu_item"><a href="" class="menu_link">Cafe Munu</a></li>
+    <div class="menu__wrapper">
+         <li class="menu_item"><a href="" class="menu_link">Cafe Munu</a></li>
     <li class="menu_item"><a href="" class="menu_link">About Us</a></li>
     <li class="menu_item"><a href="" class="menu_link">Cafe Munu</a></li>
     <li class="menu_item"><a href="" class="menu_link">Find Us</a></li>
     <li class="menu_item"><a href="" class="menu_link">Alowishus Catering</a></li>
+    </div>
+   
     
 </ul>
+	</div>
+	
 	<div class="header__btns">
 		<a href="" class="header__cartBtn"><img src="./images/cartImg.png" alt=""></a>
 		<a href="" class="header__buyBtn">Buy gift vouchers</a>
 	</div>
-	
+	<img class="close" src="./images/close.png" alt="">
+	<a class="logo-burger" href="#"><img src="./images/logo.png" alt="LOGO"></a>
 </header>
 
         <main class="main">
@@ -85,7 +93,7 @@
     </div>
 </section>
         <section class="order">
-    <div class="order__left"><img src="./images//order.png" alt=""></div>
+    <div class="order__left"><img src="./images//order.png" class="orderImg" alt=""></div>
     <div class="order__right">
         <h1 class="order__title">Order Your Favourite Coffee</h1>
         <p class="order__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -95,7 +103,234 @@
         
     </div>
 </section>
+        <section class="bestSellers">
+   
+    <div class="bestSellers_header" style="justify-content: center; display: flex; align-items: center; flex-direction: column; width: 100%;">
+        <h1 class="alowishus__title">Best Selling Coffee</h1>
+        <p class="alowishus__subtitle">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
       </div>
-     
-  </div></body>
+        
+      <div class="coffe__items">
+        <section class="coffe__item">
+   <div class="coffe__item-top">
+     <img src="./images/coffePhotoItem.png" alt="">
+     <div class="coffe__item-type">
+        <span>#1 Selling</span>
+        <h3>Double Espresso</h3>
+     </div>
+   </div>
+   
+   <p class="coffe__item-subtitle">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+    <div class="coffe__item-bottom">
+        <h2 class="coffe__item-price">$59.99</h2>
+        <a href="#" class="btn__order">Order now</a>
+    </div>
+   
+</section>
+          <section class="coffe__item">
+   <div class="coffe__item-top">
+     <img src="./images/coffeImgTwo.png" alt="">
+     <div class="coffe__item-type">
+        <span>#2 Selling</span>
+        <h3>Caramel Frappe</h3>
+     </div>
+   </div>
+   
+   <p class="coffe__item-subtitle">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+    <div class="coffe__item-bottom">
+        <h2 class="coffe__item-price">$59.99</h2>
+        <a href="#" class="btn__order">Order now</a>
+    </div>
+   
+</section>
+          <section class="coffe__item">
+   <div class="coffe__item-top">
+     <img src="./images/coffe3Img.png" alt="">
+     <div class="coffe__item-type">
+        <span>#3 Selling</span>
+        <h3>Iced Coffee</h3>
+     </div>
+   </div>
+   
+   <p class="coffe__item-subtitle">Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+    <div class="coffe__item-bottom">
+        <h2 class="coffe__item-price">$59.99</h2>
+        <a href="#" class="btn__order">Order now</a>
+    </div>
+   
+</section>
+      </div>
+   
+</section>
+        <section class="order homeCoffe">
+    
+    <div class="order__right home__right">
+        <h1 class="order__title">Instant Coffee At Your Home</h1>
+        <p class="order__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div>
+            <button href="#" class="order__btn" style="margin-top: 4px;">Download our app</button>
+        </div>
+        
+    </div>
+    <div class="order__left"><img src="./images//homecoffe1.png" class="homeImg" alt="">
+   
+</div>
+<img src="./images//bghomecoffe.png" class="bghomecoffe" alt="">  
+       
+</section>
+
+      
+      </div> 
+       <section class="customers"> 
+
+    <div class="customers__left">
+
+        <div class="customers__items swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="customer__item">
+    <img class="personImg" src="./images/person.png" alt="">
+    <div class="nameBlock">
+       <h1 class="name">Brooklyn Simmons</h1>
+       <div class="stars__items-item">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+    </div>
+    
+    </div>
+    <p class="customer__item-descr">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+</section>
+                      </div>
+                <div class="swiper-slide">
+                    <section class="customer__item">
+    <img class="personImg" src="./images/person1-1.png" alt="">
+    <div class="nameBlock">
+       <h1 class="name">Imam White</h1>
+       <div class="stars__items-item">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+    </div>
+    
+    </div>
+    <p class="customer__item-descr">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+</section>
+                      </div>
+            
+              <div class="swiper-slide">
+                  <section class="customer__item">
+    <img class="personImg" src="./images/person3.jpg" alt="">
+    <div class="nameBlock">
+       <h1 class="name">John Smith</h1>
+       <div class="stars__items-item">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+        <img src="./images//star.png" alt="">
+    </div>
+    
+    </div>
+    <p class="customer__item-descr">“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
+</section>
+            </div>
+              
+              </div>
+              
+        </div>
+    </div>
+    <div class="customers__right">
+
+        <div class="customers__header">
+            <h1>What Our Customers Say</h1>
+            <div class="estimation">
+                <p>4.9</p>
+                <div class="stars">
+                    <div class="stars__items">
+                        <img src="./images//star.png" alt="">
+                        <img src="./images//star.png" alt="">
+                        <img src="./images//star.png" alt="">
+                        <img src="./images//star.png" alt="">
+                        <img src="./images//star.png" alt="">
+                    </div>
+                    <h6>based on 2452+ reviews</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="customers__btns">
+            <img class="slider__left" src="./images/left.png" alt="">
+            <img class="slider__right" src="./images/right.png" alt="">
+            
+        </div>
+    </div>
+
+</section>
+        <div class="container">
+          <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__left">
+      <div class="logo"><img src="./images/footerlogo.png" alt=""></div>
+      <p class="footer__subtitle">We made it our mission to create community everyday and grow meaningful, lasting relationships with our staff, our suppliers and of course you, our customers.</p>
+      <h2 class="footer__title">Store Locations</h2>
+      <h4 class="footer__subtitle-text">Find your nearest Alowishus store with opening hours, location and contact details.</h4>
+      <a href="" class="footer__btn-find">Find my Alowishus </a>
+    </div>
+    <div class="footer__right">
+      <h1 class="contact__title">Contact Alowishus!</h1>
+      <div class="contact__item">
+    <img src="./images/email.png" alt="">
+    <p class="image__descr">alowishus@gmai.com</p>
+</div>
+      <div class="contact__item">
+    <img src="./images/phone.png" alt="">
+    <p class="image__descr">+110 214 214 2451</p>
+</div>
+      <div class="contact__items">
+        <a href="#"><img src="./images//fb.png" alt=""></a>
+        <a href="#"><img src="./images/inst.png" alt=""></a>
+        <a href="#"><img src="./images/twitter.png" alt=""></a>
+        <a href="#"><img src="./images/in.png" alt=""></a>
+      </div>
+      <h1 class="contact__title-two">First One’s On Us!</h1>
+      <div class="subscribe__block">
+          <input type="email" placeholder="E-mail">
+          <a href="#" class="subscribe__block-btn">Subscribe</a></div>
+      
+    </div>
+  </div>
+</footer>
+          <section class="copyright">
+    <h2 class="copyright__title">Copytright © 2022 <span>Alowishus Delicious</span></h2>
+    <p class="copyright__terms">Terms of Use  <span>| </span> Privacy Policy</p>
+</section>
+        </div>
+    </div>
+
+
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    
+      const swiper = new Swiper(".swiper",{
+        slidesPerView: 2,
+        loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider__left',
+    prevEl: '.slider__right',
+  },
+      })
+    </script>
+
+  </body>
 </html>
