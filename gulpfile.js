@@ -21,6 +21,15 @@ import { ftpDeploy } from './gulp/tasks/ftp-deploy.js';
 const isBuild = process.argv.includes('--build');
 const browserSyncInstance = browserSync.create();
 
+browserSyncInstance.init({
+  server: {
+    baseDir: "./src"
+  },
+  
+  logLevel: "debug"
+});
+
+
 const handleServer = server.bind(null, browserSyncInstance);
 const handleHTML = html.bind(null, isBuild, browserSyncInstance);
 const handleSCSS = scss.bind(null, isBuild, browserSyncInstance);

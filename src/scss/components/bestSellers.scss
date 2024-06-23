@@ -1,0 +1,30 @@
+.bestSellers{
+    margin-top: 157px;
+}
+.coffe__items{
+    display: flex;
+    align-items: center;
+    margin-top: 196px;
+    justify-content: center;
+}
+@media screen and (max-width:1180px) {
+
+    .coffe__items{
+        margin-top: 140px;
+    }
+}
+@media screen and (max-width:870px) {
+
+    .coffe__items{
+        margin-top: 90px;
+    }
+}
+@media screen and (max-width:550px) {
+
+    .bestSellers{
+        margin-top: 70px;
+    }
+    .coffe__items{
+        flex-direction: column;
+    }
+}

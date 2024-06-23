@@ -1,0 +1,26 @@
+<section class="bestSellers">
+   
+    <div class="bestSellers_header" style="justify-content: center; display: flex; align-items: center; flex-direction: column; width: 100%;">
+        <h1 class="alowishus__title">Best Selling Coffee</h1>
+        <p class="alowishus__subtitle">A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
+      </div>
+        
+      <div class="coffe__items">
+        @@include('coffeItem.html', {
+            'title': 'Double Espresso',
+            'number' : "#1 Selling",
+            'imagePath':'../images/coffePhotoItem.png',
+          })
+          @@include('coffeItem.html', {
+            'title': 'Caramel Frappe',
+            'number' : "#2 Selling",
+            'imagePath':'../images/coffeImgTwo.png',
+          })
+          @@include('coffeItem.html', {
+            'title': 'Iced Coffee',
+            'number' : "#3 Selling",
+            'imagePath':'../images/coffe3Img.png',
+          })
+      </div>
+   
+</section>

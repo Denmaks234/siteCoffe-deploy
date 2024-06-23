@@ -1,0 +1,106 @@
+@import 'config/vars';
+
+.contact__item{
+    margin-top: 25px;
+    margin-left: -21px;
+    display: flex;
+    align-items: center;
+    p{
+        font-family: 'Jost';
+        font-size: 30px;
+        font-weight: 400;
+        color: $gray;
+        margin-left: 23px;
+    }
+}
+@media screen and (max-width:1280px) {
+    
+    .contact{
+        &__title{
+            font-size: 35px;
+        }
+    }
+    .contact__item {
+        p{
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width:1125px) {
+    .contact__item {
+        margin-top: 20px;
+        p{
+            font-size: 20px;
+        }
+        img{
+            width: 50px;
+        }
+    }
+    .contact__items {
+        margin-left: -36px;
+    }
+    
+}
+
+@media screen and (max-width:870px) {
+    .contact__title {
+        font-size: 30px;
+    }
+    .contact__item {
+        margin-top: 10px;
+    }
+    .contact__item img {
+        width: 40px;
+    }
+    .contact__item p {
+        font-size: 18px;
+        margin-left: 17px;
+    }
+    .contact__items img {
+        width: 40px;
+      margin-left: 10px;
+    }
+    .contact__items {
+        margin-left: -28px;
+        margin-top: 18px;
+    }
+    .contact__title-two {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .contact__item{
+        margin-left: 0;
+        width: 190px;
+        p{
+            font-size: 16px;
+            margin-left: 13px;
+        }
+    }
+    .contact__items{
+        margin-left: 0;
+    }
+    .contact__title-two{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .contact__title{
+        font-size: 25px;
+    }
+    .contact__item {
+        p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    img{
+        width: 35px;
+    }
+    }
+    .contact__title-two {
+        font-size: 25px;
+    }
+}

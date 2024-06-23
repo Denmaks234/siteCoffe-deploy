@@ -3,6 +3,9 @@
     margin-left: 244px;
     @include centerAll;
 }
+.menu__wrapper{
+    @include centerAll;
+}
 .menu_item{
     margin-right: 40px;
 }
@@ -12,4 +15,108 @@
     font-family: 'Jost';
     font-weight: 500;
     font-size: 15px;
+}
+@media screen and (max-width:1325px) {
+
+    .menu{
+       position: absolute;
+       width: 400px;
+       height: 100vh;
+       top: 0;
+       background: #b5e2b2;
+       left: -450px;
+       z-index: 1;
+       justify-content: flex-start;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all ease 1s;
+        &__wrapper{
+            padding-top: 54px;
+            padding-left: 55px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    &_item{
+        margin-bottom: 40px;
+        
+       
+    }
+    &_link{
+         font-size: 25px;
+    }
+    }
+    
+    
+    
+}
+@media screen and (max-width:640px) {
+    .menu{
+        width: 280px;
+    }
+    .menu_link {
+         font-size: 18px;
+    }
+    .menu_item {
+        margin-bottom: 25px;
+    }
+    .close{
+        width: 15px;
+        height: 15px;
+    }
+    .logo-burger{
+        img{
+            width: 110px;
+        }
+        
+    }
+}
+
+@media screen and (max-width:440px) {
+    .menu_link {
+        font-size: 16px;
+    }
+    .menu__wrapper{
+        padding-top: 45px;
+        padding-left: 30px;
+    }
+    .menu_item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .menu{
+        width: 190px;
+    }
+    .close {
+        width: 12px;
+        height: 12px;
+    }
+    .logo-burger img {
+        width: 85px;
+    }
+}
+
+@media screen and (max-width:375px) {
+   .menu{
+         width: 100%;
+         padding-top: 50px;
+         align-items: center;
+   }
+   .manu__wrapper{
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .menu_link{
+    font-size: 22px;
+   }
+   .menu_item{
+    padding-bottom: 30px;
+   }
+   .close {
+    width: 14px;
+    height: 14px;
+}
 }

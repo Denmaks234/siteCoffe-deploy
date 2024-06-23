@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
-    'title': 'Главная'
-  })
-  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>@@title</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  
+    <script defer src="js/main.min.js"></script>
+  </head>
+  
+  <body class="body">
     <div class="wrapper">
       <div class="container">
         @@include('html/header.html')
         @@include('html/main.html')
         @@include('html/alowishus.html')
         @@include('html/order.html')
-      </div>
-     
+        @@include('html/bestSellers.html')
+        @@include('html/homeCoffe.html')
+      
+      </div> 
+       @@include('html/customers.html')
+        <div class="container">
+          @@include('html/footer.html')
+          @@include('html/copyright.html')
+        </div>
+    </div>
+
+
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    
+      const swiper = new Swiper(".swiper",{
+        slidesPerView: 2,
+        loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider__left',
+    prevEl: '.slider__right',
+  },
+      })
+    </script>
+
   </body>
 </html>

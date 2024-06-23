@@ -1,66 +1,41 @@
-/**
- * !(i)
- * Код попадает в итоговый файл, только когда вызвана функция, например FLSFunctions.spollers();
- * Или когда импортирован весь файл, например import "files/script.js";
- * Неиспользуемый код в итоговый файл не попадает.
+const burger =  document.querySelector('.burger')
+const closeBtn =  document.querySelector('.close')
+const menu = document.querySelector('.menu')
+const logo = document.querySelector('.logo')
+const logoBurger = document.querySelector('.logo-burger')
+const body = document.querySelector('.body')
 
- * Если мы хотим добавить модуль следует его раскомментировать
- */
-// import { MousePRLX } from './libs/parallaxMouse'
-// import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+burger.addEventListener('click',()=>{
+	menu.style.left = '0px';
+	closeBtn.style.left = '350px';
+	logo.style.display='none';
+	
+	
 
-import { BaseHelpers } from './helpers/base-helpers';
-import { PopupManager } from './modules/popup-manager';
-import { BurgerMenu } from './modules/burger-menu';
-import { Tabs } from './modules/tabs';
-import { Accordion } from './modules/accordion';
+	
+	if(window.innerWidth<641){
+		closeBtn.style.left = '240px';
+		
+	}
+	console.log(window.innerWidth)
+	if(window.innerWidth<440){
+		closeBtn.style.left = '165px';
+	}
+	if(window.innerWidth<375){
+		closeBtn.style.left = '280px';
+	}
+	body.style.height='100vh'
+	body.style.overflow='hidden'
+})
+closeBtn.addEventListener('click',()=>{
+	menu.style.left = '-450px';
+	closeBtn.style.left = '-350px';
+	
+	logo.style.display='block';
+	if(window.innerWidth<870){
+		logo.style.display='none';
+	}
+	body.style.height='100%'
+	body.style.overflow='auto'
+})
 
-BaseHelpers.checkWebpSupport();
-
-BaseHelpers.calcScrollbarWidth();
-
-BaseHelpers.addTouchClass();
-
-BaseHelpers.addLoadedClass();
-
-BaseHelpers.headerFixed();
-
-/**
- * Открытие/закрытие модальных окон
- * Чтобы модальное окно открывалось и закрывалось
- * На окно повешай атрибут data-popup="<название окна>"
- * На кнопку, которая вызывает окно повешай атрибут data-type="<название окна>"
-
- * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
- * На кнопку для закрытия окна добавь класс '.button-close'
- * */
-new PopupManager();
-
-/**
- *  Модуль для работы с меню (Бургер)
- * */
-new BurgerMenu().init();
-
-/**
- *  Библиотека для анимаций
- *  документация: https://michalsnik.github.io/aos
- * */
-// AOS.init();
-
-/**
- * Параллакс мышей
- * */
-// new MousePRLX();
-
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
-
-new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
-});

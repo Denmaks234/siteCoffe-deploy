@@ -22,4 +22,100 @@
     &__btns{
         @include centerAll;
     }
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+}
+.close{
+    display: none;
+}
+.burger{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.logo-burger{
+    display: none;
+}
+
+@media screen and (max-width:1325px) {
+    .header__row{
+        flex-direction: row-reverse;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        left: -350px;
+        top: 20px;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
+        transition: all ease 1s;
+    }
+    .burger{
+        display: block;
+    }
+    .logo-burger{
+        display: block;
+        position: absolute;
+        left: -300px;
+        transition: all ease 1s;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .header__cartBtn{
+        img{
+          width: 18px;
+          height: 18px;  
+        }
+        width: 40px;
+        height: 40px;
+    }
+    .header__buyBtn{
+        font-size: 13px;
+        padding: 13px 26px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .burger{
+        width: 17px;
+        height: 17px;
+    }
+    .header__cartBtn {
+        width: 30px;
+        margin-right: 13px;
+        height: 30px;
+        img{
+            width: 13px;
+            height: 13px;
+        }
+    }
+    .header__buyBtn{
+        font-size: 9px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header__buyBtn {
+        font-size: 8px;
+        padding: 10px 10px;
+    }
+    .header__cartBtn{
+        width: 28px;
+        height: 28px;
+        img{
+            width: 11px;
+            height: 11px;
+        }
+    }
 }

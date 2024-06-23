@@ -22,6 +22,7 @@ const html = (isBuild, serverInstance) => {
       basepath: '@file'
     }))
     .pipe(gulp.dest(paths.templates.dest))
+    .pipe(plugins.replace(/@img\//g, 'images/'))
     .pipe(plugins.if(isBuild, webpHtml()))
     .pipe(
       htmlMin({

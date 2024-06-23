@@ -6,6 +6,7 @@
     margin-top: 120px;
     &__left{
         max-width: 567px;
+        position: relative;
     }
     &__title{
         font-family: 'Jost';
@@ -35,6 +36,7 @@
     }
     &__btnShop{
         font-family: 'Jost';
+        color: black;
         font-size: 18px;
         font-weight: 500;
         border-bottom: 1px solid  black;
@@ -53,6 +55,238 @@
 }
 .cafeMain{
     position: absolute;
-    left: 524px;
-    top: 565px;
+    left: 438px;
+    top: 337px;
+}
+
+@media screen and (max-width:1325px) {
+    .main{
+        &__title{
+            font-size: 100px;
+        }
+        &__subtitle{
+            font-size: 23px;
+        }
+
+        &__right{
+            img{
+            width: 600px;
+        }
+    }
+    }
+
+    .cafeMain{
+       
+        left: 343px;
+        top: 332px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .main{
+        &__title{
+            font-size: 90px;
+            line-height: 110px;
+        }
+        &__subtitle{
+            font-size: 22px;
+        }
+
+        &__right{
+            img{
+            width: 550px;
+        }
+    }
+    }
+
+    .cafeMain{
+       
+        left: 321px;
+        top: 259px;
+    }
+}
+@media screen and (max-width:1180px) {
+    .main{
+        &__title{
+            font-size: 90px;
+            line-height: 110px;
+        }
+        &__subtitle{
+            font-size: 22px;
+        }
+
+        &__right{
+            img{
+            width: 500px;
+        }
+    }
+    }
+
+    .cafeMain{
+        left: 321px;
+        top: 259px;
+    }
+}
+@media screen and (max-width:1180px) {
+    .main{
+        &__title{
+            font-size: 70px;
+            line-height: 80px;
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__right{
+            img{
+            width: 430px;
+        }
+    }
+    }
+
+    .cafeMain {
+        width: 50px;
+        left: 237px;
+        top: 188px;
+    }
+    .main__btnDownload {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    .main__btnShop{
+        font-size: 15px;
+    }
+    .main__btns{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:870px) {
+    .main{
+        &__title{
+            font-size: 60px;
+            line-height: 70px;
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+
+        &__right{
+            img{
+            width: 380px;
+        }
+    }
+    }
+
+    .cafeMain {
+        width: 50px;
+        left: 204px;
+        top: 162px;
+    }
+    .main__btnDownload {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    .main__btnShop{
+        font-size: 15px;
+    }
+    .main__btns{
+        margin-top: 40px;
+    }
+    
+}
+
+@media screen and (max-width:768px ) {
+    .main{
+        margin-top: 85px;
+    }
+    .main__right img {
+        width: 280px;
+    }
+    .main__title {
+        font-size: 53px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    .cafeMain {
+        width: 42px;
+        left: 178px;
+        top: 139px;
+    }
+    .main__btnDownload {
+        padding: 13px 25px;
+        font-size: 12px;
+    }
+    .main__btnShop {
+        font-size: 13px;
+    }
+    .main__btns {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:640px ) {
+    .main{
+        margin-top: 55px;
+    }
+    .main__right img {
+        width: 240px;
+    }
+    .main__title {
+        font-size: 47px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .main__subtitle {
+        font-size: 13px;
+    }
+    .cafeMain {
+        width: 37px;
+        left: 151px;
+        top: 114px;
+    }
+    .main__btnDownload {
+        padding: 13px 16px;
+        font-size: 10px;
+    }
+    .main__btnShop {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .main__btns {
+        margin-top: 25px;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .main{
+        @include centerAll;
+    flex-direction: column;
+    }
+    .main__right{
+        margin-left: 0;
+    }
+    .main__left{
+        @include centerAll;
+    flex-direction: column;
+    }
+    .main__title{
+        text-align: center;
+    }
+    .cafeMain{
+        display: none;
+    }
+    .main__right{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .main__title{
+        font-size: 35px;
+        line-height: 40px;
+        width: 300px;
+    }
+    .main__subtitle {
+        font-size: 12px;
+    }
 }

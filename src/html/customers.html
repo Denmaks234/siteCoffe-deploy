@@ -1,0 +1,60 @@
+<section class="customers"> 
+
+    <div class="customers__left">
+
+        <div class="customers__items swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    @@include('customerItem.html', {
+                        'imagePath': '../images/person.png',
+                        'name' : 'Brooklyn Simmons'
+        
+                      })
+                      </div>
+                <div class="swiper-slide">
+                    @@include('customerItem.html', {
+                        'imagePath': '../images/person1-1.png',
+                        'name' : 'Imam White'
+        
+                      })
+                      </div>
+            
+              <div class="swiper-slide">
+                  @@include('customerItem.html', {
+                'imagePath': '../images/person3.jpg',
+                'name' : 'John Smith'
+
+              })
+            </div>
+              
+              </div>
+              
+        </div>
+    </div>
+    <div class="customers__right">
+
+        <div class="customers__header">
+            <h1>What Our Customers Say</h1>
+            <div class="estimation">
+                <p>4.9</p>
+                <div class="stars">
+                    <div class="stars__items">
+                        <img  src="../images//star.png" alt="">
+                        <img    src="../images//star.png" alt="">
+                        <img  src="../images//star.png" alt="">
+                        <img  src="../images//star.png" alt="">
+                        <img  src="../images//star.png" alt="">
+                    </div>
+                    <h6>based on 2452+ reviews</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="customers__btns">
+            <img class="slider__left" src="../images/left.png" alt="">
+            <img class="slider__right" src="../images/right.png" alt="">
+            
+        </div>
+    </div>
+
+</section>

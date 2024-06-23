@@ -4,13 +4,17 @@ const server = (instance) => {
   instance.init({
     server: {
       baseDir: filePaths.buildFolder,
+      
     },
     logLevel: 'info',
+    online: true,
+    tunnel: true,
     cors: true,
     notify: true,
     open: false,
     reloadOnRestart: true,
     port: 3000,
+    
   });
 };
 

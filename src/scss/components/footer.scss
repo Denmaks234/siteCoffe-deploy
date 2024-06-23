@@ -1,0 +1,333 @@
+@import 'config/vars';
+@import 'config/mixins';
+
+
+.footer{
+    margin-top: 210px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__right{
+        margin-right: 90px;
+    }
+    &__subtitle{
+        margin-top: 40px;
+        font-family: 'Jost';
+        font-size: 30px;
+        font-weight: 400;
+        color: $gray;
+        max-width: 558px;
+        line-height: 40px;
+    }
+    &__title{
+        margin-top: 104px;
+        font-family: 'Jost';
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: -0.6px;
+    }
+    &__subtitle-text{
+        font-family: 'Jost';
+        font-size: 30px;
+        font-weight: 400;
+        color: $gray;
+        line-height: 40px;
+        max-width: 558px;
+        margin-top: 25px;
+        margin-bottom: 34px;
+    }
+    &__btn-find{
+        font-family: 'Jost';
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        letter-spacing: 0.3px;
+    }
+}
+
+.footer__btn-find::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url('../../images//arrow-right\ 1.png');
+    top: -2px;
+    right: -34px;
+}
+
+.contact{
+    
+    &__items{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: -47px;
+        img{
+            margin-left: 24px;
+        }
+    }
+    &__title{
+        margin-top: 17px;
+        margin-left: -20px;
+        letter-spacing: -0.4px;
+        font-family: 'Jost';
+        font-size: 40px;
+        font-weight: 900;
+    }
+    &__title-two{
+        margin-top: 85px;
+        font-family: 'Jost';
+        font-size: 40px;
+        font-weight: 900;
+        margin-left: -21px;
+        letter-spacing: -0.4px;
+    }
+}
+
+.subscribe__block{
+    display: grid;
+   
+    input{
+        padding: 27px 30px;
+        border-radius: 65px;
+        margin-top: 30px;
+        margin-left: -21px;
+    }
+    input::placeholder{
+        font-family: 'Jost';
+        font-size: 22px;
+        font-weight: 400;
+    }
+    &-btn{
+        margin-top: 27px;
+        margin-left: -21px;
+        @include btnBlack;
+        width: 173px;
+        height: 70px;
+        @include centerAll;
+        border-radius: 126px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .footer{
+        margin-top: 130px;
+        &__subtitle{
+            font-size: 25px;
+        }
+        &__right{
+            margin-right: 0;
+        }
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle-text{
+            font-size: 25px;
+        }
+        &__left{
+            max-width: 520px;
+        }
+    }
+    .contact{
+        &__title{
+            font-size: 35px;
+        }
+    }
+    .contact__items{
+        margin-left: -30px;
+        img{
+            width: 50px;
+            margin-left: 18px;
+        }
+    }
+    .contact__title-two{
+        font-size: 35px;
+    }
+    .subscribe__block input {
+        padding: 20px 30px;
+        margin-left: -28px;
+    }
+    .subscribe__block-btn{
+        height: 55px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1125px) {
+    .footer{
+        &__subtitle{
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__title{
+            margin-top: 77px;
+        }
+        &__subtitle-text{
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__left{
+            max-width: 430px;
+        }
+    }
+    .footer__logo{
+        
+        img{
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .footer{
+        margin-top: 70px;
+    }
+    .footer__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__title{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .footer__subtitle {
+        font-size: 19px;
+        text-align: center;
+        line-height: 22px;
+        margin-top: 25px;
+    }
+    .footer__logo{
+        text-align: center;
+        img{
+            width: 150px;
+        }
+    }
+    .footer__subtitle-text{
+        text-align: center;
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .footer__btn-find::after{
+        display: none;
+    } 
+    .footer__btn-find{
+        font-size: 15px;
+        padding-bottom: 3px;
+        text-decoration: underline;
+    }
+    .footer__left{
+        @include centerAll;
+        flex-direction: column;
+    }
+    .footer__right{
+        width: 100%;
+   @include centerAll;
+    flex-direction: column;
+    }
+    .subscribe__block {
+        justify-items: center;
+        input {
+        padding: 25px 100px 20px 20px;
+    }
+    input::placeholder{
+        font-family: 'Jost';
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
+}
+
+
+@media screen and (max-width:760px) {
+    .footer__logo{
+        img{
+           width: 110px; 
+        }
+        
+    }
+    .footer__subtitle {
+        font-size: 16px;
+        text-align: center;
+        line-height: 21px;
+        margin-top: 15px;
+    }
+    .footer__title {
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .footer__subtitle-text {
+        font-size: 16px;
+        line-height: 21px;
+        width: 360px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .footer__btn-find {
+        font-size: 12px;
+    }
+    .contact__title {
+        font-size: 30px;
+        margin-left: 0;
+    }
+    .subscribe__block input{
+        margin-left: 0;
+    }
+    .subscribe__block-btn{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .footer__subtitle{
+        width: 320px;
+        font-size: 13px;
+        line-height: 17px;
+    } 
+    .footer__title {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .footer__subtitle-text {
+        font-size: 13px;
+        line-height: 17px;
+        width: 290px;
+       
+    }
+    .contact__items img {
+        width: 35px;
+    }
+    .subscribe__block input {
+        padding: 14px 100px 12px 15px;
+    }
+    .subscribe__block input::placeholder {
+       font-size: 14px;
+    }
+    .subscribe__block-btn {
+        height: 40px;
+        font-size: 13px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .footer__subtitle {
+        width: 280px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .footer__subtitle-text {
+        font-size: 12px;
+        line-height: 17px;
+        width: 290px;
+    }
+}

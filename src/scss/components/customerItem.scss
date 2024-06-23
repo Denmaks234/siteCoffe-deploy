@@ -1,0 +1,153 @@
+@import 'config/mixins';
+
+.customer__item{
+    width: 468px;
+    height: 648px;
+    background: white;
+    border-radius: 25px;
+    &-descr{
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    &-descr{
+        padding-left: 40px;
+        padding-top: 30px;
+        line-height: 30px;
+    }
+}
+.nameBlock{
+    padding-left: 39px;
+    padding-right: 40px;
+    padding-top: 40px;
+   display: flex;
+   align-items: center;}
+.name{
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+.stars__items-item{
+   
+    margin-left: 20px;
+}
+
+.personImg{
+    border-radius: 25px 25px 0px 0px; 
+}
+.swiper-slide:nth-child(1) .customer__item{
+    margin-left: 25px;
+}
+.swiper-slide:nth-child(2) .customer__item{
+    margin-left: 14px;
+}
+.swiper-slide:nth-child(3) .customer__item{
+    margin-left: 3px;
+}
+.stars__items-item img:nth-child(2){
+    margin-left: -6px;
+}
+.stars__items-item img:nth-child(3){
+    margin-left: -4px;
+}
+.stars__items-item img:nth-child(4){
+    margin-left: -6px;
+}
+@media screen  and (max-width:1180px){
+    .customer__item{
+        width: 430px;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .customer__item {
+        width: 370px;
+        height: 550px;
+        &-descr{
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 25px;
+            font-size: 17px;
+        }
+    }
+    .personImg{
+        width: 370px;
+    }
+    .name{
+        font-size: 21px;
+    }
+    .nameBlock{
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .customer__item {
+        width: 280px;
+        height: 415px;
+    }
+    .personImg {
+        width: 280px;
+    }
+    .nameBlock{
+        flex-direction: column;
+    }
+    .stars__items-item{
+        margin-left: 0;
+        img{
+            
+            width: 20px;
+        }
+    }
+    .customer__item-descr {
+       padding-top: 20px;
+       padding-left: 15px;
+        padding-right: 6px;
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .nameBlock{
+        padding-top: 20px;
+    }
+    .name{
+        font-size: 17px;
+    }
+    .stars__items-item img:nth-child(2){
+        margin-left: 0px;
+    }
+    .stars__items-item img:nth-child(3){
+        margin-left: 0px;
+    }
+    .stars__items-item img:nth-child(4){
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:640px) {
+    .customer__item {
+        width: 230px;
+        height: 360px;
+    }
+    .personImg{
+        width: 230px;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .stars__items-item{
+        margin-left: 0;
+        img{
+            
+            width: 16px;
+        }
+    }
+    .customer__item-descr {
+        padding-top: 7px;
+        font-size: 12px;
+    }
+}
